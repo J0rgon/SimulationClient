@@ -1,0 +1,1 @@
+/home/jorgon/Documentos/proyectos/SimulationClient/simulation-engine/target/wasm32-unknown-unknown/release/libsimulation_engine.rlib: /home/jorgon/Documentos/proyectos/SimulationClient/simulation-engine/src/lib.rs
