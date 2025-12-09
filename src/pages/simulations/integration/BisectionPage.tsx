@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import init, { solve_bisection_generic } from "../../../../simulation-engine/pkg/simulation_engine";
+import standardizeInput from "./standardize_input";
 
 export function BisectionPage() {
   const [result, setResult] = useState<string | null>(null);
@@ -18,7 +19,9 @@ export function BisectionPage() {
   const handleRunSimulation = () => {
     if (!isReady) return;
     try {
-      const value = solve_bisection_generic(displayedFunction, A, B, 10 ** (-tolerance));
+      let ready = standardizeInput(displayedFunction);
+      console.log(ready);
+      const value = solve_bisection_generic(ready, A, B, 10 ** (-tolerance));
       setResult(value.toString());
     } catch (error) {
       setResult("Not a valid function");
@@ -32,11 +35,22 @@ export function BisectionPage() {
         <h5>Insert your function already equalled to zero (use x as the variable)</h5>
         <div className="bg-gray-500 p-4 rounded-md my-4 border-2 border-cyan-500 focus-within:border-white outline-0 flex-row flex-wrap items-center justify-center">
           <h6>f(x)=</h6>
-          <input type="text" className="outline-0" value={displayedFunction} onChange={
-            input => {
+          <textarea
+            rows={1}
+            className="outline-0 font-mono resize-none overflow-hidden"
+            value={displayedFunction}
+            onChange={input => {
               setDisplayedFunction(input.target.value)
-            }
-          } />
+            }}
+            onKeyDown={(e) => {
+              // Prevent Enter from adding newlines
+              if (e.key === 'Enter') e.preventDefault();
+            }}
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck="false"
+            style={{ fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' }}
+          />
         </div>
         <div className="grid grid-cols-2 gap-1.5">
           <h5>Left point</h5>

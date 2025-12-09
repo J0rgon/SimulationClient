@@ -48,3 +48,9 @@ body::before {
     animation: none !important;
   }
 }
+
+input.font-mono {
+    font-feature-settings: "liga" 0, "dlig" 0 !important;
+    -webkit-font-feature-settings: "liga" 0, "dlig" 0 !important;
+    font-family: var(--font-mono) !important; 
+}
