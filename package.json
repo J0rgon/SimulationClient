@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "bun-plugin-tailwind": "^0.1.2",
+    "mathjs": "^15.1.0",
     "react": "^19",
     "react-dom": "^19",
     "react-router-dom": "^7.10.1",
+    "simulation-engine": "./simulation-engine/pkg",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {

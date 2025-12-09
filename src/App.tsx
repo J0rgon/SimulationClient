@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import MenuPage from "./pages/MenuPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import { BisectionPage } from "./pages/simulations/integration/BisectionPage";
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
         <Route path="/" element={<HomePage/>}/>
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/menu" element={<MenuPage/>}/>
+        <Route path="/simulations/bisection" element={<BisectionPage/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
     </BrowserRouter>

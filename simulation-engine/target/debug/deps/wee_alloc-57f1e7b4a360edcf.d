@@ -1,0 +1,11 @@
+/home/jorgon/Documentos/proyectos/SimulationClient/simulation-engine/target/debug/deps/wee_alloc-57f1e7b4a360edcf.d: /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/lib.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/extra_assert.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/const_init.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/neighbors.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/size_classes.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/imp_unix.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/size_classes_init.rs
+
+/home/jorgon/Documentos/proyectos/SimulationClient/simulation-engine/target/debug/deps/libwee_alloc-57f1e7b4a360edcf.rmeta: /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/lib.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/extra_assert.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/const_init.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/neighbors.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/size_classes.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/imp_unix.rs /home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/size_classes_init.rs
+
+/home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/lib.rs:
+/home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/extra_assert.rs:
+/home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/const_init.rs:
+/home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/neighbors.rs:
+/home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/size_classes.rs:
+/home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/imp_unix.rs:
+/home/jorgon/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/wee_alloc-0.4.5/src/size_classes_init.rs:
