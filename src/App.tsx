@@ -6,7 +6,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import MenuPage from "./pages/MenuPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import { BisectionPage } from "./pages/simulations/integration/BisectionPage";
+import { BisectionPage } from "./pages/simulations/solves/BisectionPage";
+import FixedPointPage from "./pages/simulations/solves/FixedPointPage";
 
 export function App() {
   return (
@@ -17,6 +18,7 @@ export function App() {
         <Route path="/about" element={<AboutPage/>}/>
         <Route path="/menu" element={<MenuPage/>}/>
         <Route path="/simulations/bisection" element={<BisectionPage/>}/>
+        <Route path="/simulations/fixed_point" element={<FixedPointPage/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
     </BrowserRouter>

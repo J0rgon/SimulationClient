@@ -1,6 +1,6 @@
 #![allow(unused_assignments)]
 use core::f64;
-use std::mem::swap;
+use std::{collections::btree_set::Range, mem::swap};
 
 use evalexpr::*;
 use wasm_bindgen::prelude::*;
@@ -78,4 +78,33 @@ pub fn solve_bisection_generic(f: &str, a: f64, b: f64, tolerance: f64) -> f64 {
     }
 
     (current_a + current_b) / 2.0_f64
+}
+
+#[wasm_bindgen]
+pub fn solve_fixed_point(f: &str, a: f64, tolerance: f64) -> f64 {
+    let precompiled = match build_operator_tree::<DefaultNumericTypes>(f) {
+        Ok(tree) => tree,
+        Err(_) => return f64::NAN,
+    };
+
+    let mut context: HashMapContext<DefaultNumericTypes> =
+        HashMapContext::<DefaultNumericTypes>::new();
+
+    let mut current_point = a;
+    let mut last_point = a;
+
+    for _ in 0..MAX_TRIES {
+        current_point = evaluate(&precompiled, &current_point, &mut context);
+        
+        if current_point.is_nan() {
+            return current_point;
+        }
+
+        if (current_point - last_point).abs() < tolerance || (current_point - last_point).abs() < f64::EPSILON {
+            return current_point;
+        }
+        last_point = current_point;
+    }
+
+    f64::NAN
 }
