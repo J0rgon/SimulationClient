@@ -79,9 +79,3 @@ pub fn solve_bisection_generic(f: &str, a: f64, b: f64, tolerance: f64) -> f64 {
 
     (current_a + current_b) / 2.0_f64
 }
-
-#[wasm_bindgen]
-pub fn calculate_dummy_data(x: f64) -> f64 {
-    let result = x.sin() * x.cos() + 2.0;
-    result
-}
