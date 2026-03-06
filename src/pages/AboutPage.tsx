@@ -5,8 +5,8 @@ function AboutPage() {
                 <h1 className="text-5xl font-bold my-4 leading-tight">Jorgon</h1>
                 <hr></hr>
                 <p>
-                    Hi! The name's Jorge and I'm a salvadoran Computer Science student, that ended up in computing after finishing high school without a clear path. And I really like math (physics too, but I have a harder time with it). That's about it.
-                    For contacting me, you can do so at jegonzalez2992@gmail.com. Have a nice day and thank you for reading!
+                    Hi! The name's Jorge and I'm a salvadoran Computer Science student, that ended up in computing after finishing high school without a clear path. And I really like math. That's about it.
+                    Have a nice day and thank you for reading!
                 </p>
             </div>
         </div>

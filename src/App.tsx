@@ -8,6 +8,7 @@ import MenuPage from "./pages/MenuPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import { BisectionPage } from "./pages/simulations/solves/BisectionPage";
 import FixedPointPage from "./pages/simulations/solves/FixedPointPage";
+import AitkenPage from "./pages/simulations/solves/AitkenPage";
 
 export function App() {
   return (
@@ -19,6 +20,8 @@ export function App() {
         <Route path="/menu" element={<MenuPage/>}/>
         <Route path="/simulations/bisection" element={<BisectionPage/>}/>
         <Route path="/simulations/fixed_point" element={<FixedPointPage/>}/>
+        <Route path="/simulations/aitken" element={<AitkenPage/>}/>
+        <Route path="/simulations/steffensen" element={<AitkenPage/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
     </BrowserRouter>

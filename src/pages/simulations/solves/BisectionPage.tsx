@@ -37,7 +37,7 @@ export function BisectionPage() {
       <SimulationsContainer children={
         <>
           <h5>Insert your function already equalled to zero (use x as the variable)</h5>
-          <TwoDimentionalFunctionInput displayedFunction={displayedFunction} setDisplayedFunction={setDisplayedFunction} />
+          <TwoDimentionalFunctionInput displayedFunction={displayedFunction} setDisplayedFunction={setDisplayedFunction} message="f(x)" />
           <div className="grid grid-cols-2 gap-1.5">
             <h5>Left point</h5>
             <h5>Right point</h5>

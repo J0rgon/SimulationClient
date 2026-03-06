@@ -15,8 +15,8 @@ function MenuPage() {
             <div className="grid grid-cols-2">
                 <Link to={"/simulations/bisection"} className="bg-cyan-500 p-2 m-1 rounded-xs">Bisection</Link>
                 <Link to={"/simulations/fixed_point"} className="bg-cyan-500 p-2 m-1 rounded-xs">Fixed point</Link>
-                <Link to={"/"} className="bg-cyan-500 p-2 m-1 rounded-xs">Aitken</Link>
-                <Link to={"/"} className="bg-cyan-500 p-2 m-1 rounded-xs">Steffensen</Link>
+                <Link to={"/simulations/aitken"} className="bg-cyan-500 p-2 m-1 rounded-xs">Aitken</Link>
+                <Link to={"/simulations/steffensen"} className="bg-cyan-500 p-2 m-1 rounded-xs">Steffensen</Link>
             </div>
         </div>
     );

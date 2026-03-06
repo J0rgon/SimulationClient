@@ -38,7 +38,7 @@ function FixedPointPage() {
             children={
                 <>
                     <h5>Insert your function already equalled to x (use x as the variable)</h5>
-                    <TwoDimentionalFunctionInput displayedFunction={displayedFunction} setDisplayedFunction={setDisplayedFunction} />
+                    <TwoDimentionalFunctionInput displayedFunction={displayedFunction} setDisplayedFunction={setDisplayedFunction} message="f(x)"/>
                     <h5>Insert the starting point</h5>
                     <NumericalInput displayedNumber={A} setDisplayedNumber={setA} />
                     <h5>Insert the tolerance (as a power of ten)</h5>
