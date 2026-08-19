@@ -1,6 +1,6 @@
 #![allow(unused_assignments)]
 use core::f64;
-use std::{char::MAX, collections::btree_set::Range, mem::swap};
+use std::mem::swap;
 
 use evalexpr::*;
 use wasm_bindgen::prelude::*;
@@ -211,4 +211,29 @@ pub fn solve_steffensen(f: &str, a: f64, tolerance: f64) -> f64 {
     }
 
     f64::NAN
+}
+
+#[wasm_bindgen]
+pub fn integral_trapezoid(f: &str, a: f64, b: f64, n_f64: f64) -> f64 {
+    let precompiled = match build_operator_tree::<DefaultNumericTypes>(f) {
+        Ok(tree) => tree,
+        Err(_) => return f64::NAN,
+    };
+
+    let mut context: HashMapContext<DefaultNumericTypes> =
+        HashMapContext::<DefaultNumericTypes>::new();
+
+    let n: usize = n_f64.round() as usize;
+    let delta_x = (b - a) / (n as f64);
+
+    let mut accum =
+        (evaluate(&precompiled, &a, &mut context) + evaluate(&precompiled, &b, &mut context)) / 2.0;
+
+    for k in 1..n {
+        let x_k = a + (k as f64) * delta_x;
+        accum += evaluate(&precompiled, &x_k, &mut context);
+    }
+
+    let result = accum * delta_x;
+    result
 }
