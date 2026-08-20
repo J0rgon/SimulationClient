@@ -10,6 +10,7 @@ import { BisectionPage } from "./pages/simulations/solves/BisectionPage";
 import FixedPointPage from "./pages/simulations/solves/FixedPointPage";
 import AitkenPage from "./pages/simulations/solves/AitkenPage";
 import TrapezoidPage from "./pages/simulations/integrals/TrapezoidPage";
+import SimpsonsOneThirdPage from "./pages/simulations/integrals/SimpsonsOneThirdPage";
 
 export function App() {
   return (
@@ -24,6 +25,7 @@ export function App() {
         <Route path="/simulations/aitken" element={<AitkenPage/>}/>
         <Route path="/simulations/steffensen" element={<AitkenPage/>}/>
         <Route path="/simulations/trapezoid" element={<TrapezoidPage/>}/>
+        <Route path="/simulations/simpsonsonethird" element={<SimpsonsOneThirdPage/>}/>
         <Route path="*" element={<NotFoundPage/>}/>
       </Routes>
     </BrowserRouter>

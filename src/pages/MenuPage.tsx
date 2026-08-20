@@ -9,7 +9,7 @@ function MenuPage() {
             <h2 className="my-8 text-3xl">Numerical Integrals</h2>
             <div className="grid grid-cols-2">
                 <Link to={"/simulations/trapezoid"} className="bg-cyan-500 p-2 m-1 rounded-xs">Trapezoid</Link>
-                <Link to={"/"} className="bg-cyan-500 p-2 m-1 rounded-xs">Simpson's Rule</Link>
+                <Link to={"/simulations/simpsonsonethird"} className="bg-cyan-500 p-2 m-1 rounded-xs">Simpson's 1/3 Rule</Link>
             </div>
             <h2 className="my-8 text-3xl">Numerical Solves</h2>
             <div className="grid grid-cols-2">
